@@ -28,13 +28,13 @@ Seu Índice de Massa Corporal (IMC), com uma classificação indicativa.
 A recomendação de Consumo Diário de Água.
 Uma Dieta Personalizada adaptada aos seus objetivos e preferências, com sugestões de refeições para o café da manhã, almoço, jantar e lanches.
 
-10. Inclusão de créditos
+5. Inclusão de créditos
 Vanderson Henrique da Silva Correia Filho / https://github.com/VandersonHenrique
 Fernando Rufino Barcelos / https://github.com/fernandorufinobarcelos
 Ícaro de lima Wanzeler / https://github.com/IcaroLW
 Emilli Giuliane Pereira Lima / https://github.com/Emilli-Giuliane
 
-12. Inclusão de uma licença
+6. Inclusão de uma licença
 MIT License
 
 Copyright (c) 2025 UNA - Gestão e Qualidade de Software 2025.1
@@ -57,4 +57,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-16. Inclusão de testes
+7. Inclusão de testes
