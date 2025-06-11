@@ -5,8 +5,8 @@
 
 EEste projeto acadêmico tem como objetivo principal oferecer uma ferramenta rápida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário.
 
-   3. Funcionalidades Principais
-   
+  <h2>3. Funcionalidades Principais</h2>
+
       a. Cadastro e Login de Usuários: Sistema seguro para criação e autenticação de contas.
       b. Cálculos de Saúde:
       c. Taxa de Metabolismo Basal (TMB)
@@ -14,7 +14,7 @@ EEste projeto acadêmico tem como objetivo principal oferecer uma ferramenta rá
       e. Consumo de Água Diário Ideal
       f. Plano Alimentar Personalizado: Sugestão de dieta baseada nos objetivos e preferências do usuário.
       
-  4. Pré-requisitos
+  <h2>4. Pré-requisitos</h2>
 
    a. Antes de começar, garanta que você tenha os seguintes softwares instalados em sua máquina:
    b. XAMPP: Um ambiente de servidor local que inclui Apache, MySQL e PHP.
@@ -22,7 +22,7 @@ EEste projeto acadêmico tem como objetivo principal oferecer uma ferramenta rá
    d. Um navegador web: (ex: Google Chrome, Firefox).
    e. MySQL Workbench (Opcional, mas recomendado): Para gerenciar o banco de dados com mais facilidade.
 
-<h2>. instalação e Execução do Projeto
+<h2>. instalação e Execução do Projeto</h2>
 Siga este passo a passo para rodar o projeto em sua máquina local.
 
    a. Clonar o Repositório
