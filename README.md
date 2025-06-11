@@ -1,10 +1,55 @@
 <h2>1. Nome do Projeto:</h2>
    NutriFácil
    
-<h2>2. Descrição:</h2>
-Este projeto acadêmico tem como objetivo principal oferecer uma ferramenta rapida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário
+<h2>2. Descrição</h2>
+
+EEste projeto acadêmico tem como objetivo principal oferecer uma ferramenta rápida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário.
+
+   3. Funcionalidades Principais
    
-<h2>3. Instalação e execução do projeto</h2>
+      a. Cadastro e Login de Usuários: Sistema seguro para criação e autenticação de contas.
+      b. Cálculos de Saúde:
+      c. Taxa de Metabolismo Basal (TMB)
+      d. Índice de Massa Corporal (IMC)
+      e. Consumo de Água Diário Ideal
+      f. Plano Alimentar Personalizado: Sugestão de dieta baseada nos objetivos e preferências do usuário.
+      
+  4. Pré-requisitos
+
+   a. Antes de começar, garanta que você tenha os seguintes softwares instalados em sua máquina:
+   b. XAMPP: Um ambiente de servidor local que inclui Apache, MySQL e PHP.
+   c. Git: Para clonar o repositório.
+   d. Um navegador web: (ex: Google Chrome, Firefox).
+   e. MySQL Workbench (Opcional, mas recomendado): Para gerenciar o banco de dados com mais facilidade.
+
+<h2>. instalação e Execução do Projeto
+Siga este passo a passo para rodar o projeto em sua máquina local.
+
+   a. Clonar o Repositório
+      Abra o seu terminal ou Git Bash e clone este repositório para o seu computador.
+   b. Mover a Pasta do Projeto
+      Mova a pasta clonada  para dentro da pasta htdocs do seu XAMPP. O caminho padrão é:
+   C:\xampp\htdocs\
+      O caminho final do projeto deverá ser: C:\xampp\htdocs\NutriFacil\
+   c. Iniciar o Servidor XAMPP
+      Abra o Painel de Controle do XAMPP e inicie os módulos Apache e MySQL.
+      Se o MySQL falhar, edite o arquivo my.ini para usar uma porta alternativa 3307.
+   d. Importar o Banco de Dados
+      O jeito mais fácil de configurar o banco de dados é importando o arquivo .sql que está neste repositório.
+      Abra o MySQL Workbench e conecte-se ao seu servidor local .
+      No menu superior, vá em File > Open SQL Script... e selecione o arquivo banco_de_dados.sql que está na pasta do projeto.
+   e. Configurar a Conexão
+      Para que o código PHP se conecte ao banco de dados, você precisa configurar suas credenciais.
+      Na pasta do projeto, encontre o arquivo config.example.php.
+      Faça uma cópia deste arquivo e renomeie a cópia para config.php.
+      Abra o config.php e edite as seguintes linhas com as suas informações:
+      define('DB_PASSWORD', 'sua_senha_do_mysql_root'); 
+      Importante: Se você precisou alterar a porta do MySQL no Passo 3 (ex: para 3307), você precisará ajustar a linha de conexão nos arquivos processar_cadastro.php e Serv_Login.php para incluir a porta:
+      Exemplo de alteração: "$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, 3307);"
+   f. Acessar o Projeto
+      Abra seu navegador e acesse o site.
+      Ex: http://localhost/NutriFacil/login.html
+
 
    
 <h2>4. Uso do projeto</h2>
