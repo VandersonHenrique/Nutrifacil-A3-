@@ -8,6 +8,7 @@
 
    
 4. Uso do projeto
+
 a. Criar sua Conta
 Clique em "Fazer Cadastro": Você encontrará essa opção na tela inicial do aplicativo.
 Preencha seus Dados Essenciais: Informe seu Nome completo, E-mail, crie uma Senha segura, selecione seu Gênero e insira sua Data de Nascimento e suas alergias. Certifique-se de que todas as informações estejam corretas para garantir a precisão dos cálculos.
