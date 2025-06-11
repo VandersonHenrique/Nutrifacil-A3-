@@ -3,7 +3,7 @@
    
 <h2>2. Descrição</h2>
 
-EEste projeto acadêmico tem como objetivo principal oferecer uma ferramenta rápida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário.
+Este projeto acadêmico tem como objetivo principal oferecer uma ferramenta rápida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário.
 
   <h2>3. Funcionalidades Principais</h2>
 
@@ -16,13 +16,13 @@ EEste projeto acadêmico tem como objetivo principal oferecer uma ferramenta rá
       
   <h2>4. Pré-requisitos</h2>
 
-   a. Antes de começar, garanta que você tenha os seguintes softwares instalados em sua máquina:
-   b. XAMPP: Um ambiente de servidor local que inclui Apache, MySQL e PHP.
-   c. Git: Para clonar o repositório.
-   d. Um navegador web: (ex: Google Chrome, Firefox).
-   e. MySQL Workbench (Opcional, mas recomendado): Para gerenciar o banco de dados com mais facilidade.
+   <p>a. Antes de começar, garanta que você tenha os seguintes softwares instalados em sua máquina:</p>
+   <p>b. XAMPP: Um ambiente de servidor local que inclui Apache, MySQL e PHP.</p>
+   <p>c. Git: Para clonar o repositório.</p>
+   <p>d. Um navegador web: (ex: Google Chrome, Firefox).</p>
+   <p>e. MySQL Workbench (Opcional, mas recomendado): Para gerenciar o banco de dados com mais facilidade.</p>
 
-<h2>. instalação e Execução do Projeto</h2>
+<h2>5. instalação e Execução do Projeto</h2>
 Siga este passo a passo para rodar o projeto em sua máquina local.
 
    a. Clonar o Repositório
