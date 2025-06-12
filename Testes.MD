@@ -55,7 +55,7 @@
 
 | ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
 |:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
-| FT-01     | Seleção de Dieta Mediterrânea | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar” | Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino | O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais.|
+| FT-01     | Seleção de Dieta Vegetariana | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Vegetariana” 3. Preencher o campo Peso com 100 kg 4. Preencher o campo Altura com 182 cm 5. Preencher o campo Idade com 40 anos 6. Selecionar Sexo como Masculino 7. Clicar no botão “Solicitar Plano Alimentar” | Dieta: Vegetariana - Peso: 100 - Altura: 182 - Idade: 40 - Sexo: Masculino | O sistema exibe um plano alimentar contendo refeições ricas em lentilhas com foco em vegetais não amilácios com variedade de folhas verdes, arroz integral e batata doce.|  Passou! |  ✅  |  O sistema respondeu como o esperado  |
 
 <h2>[2]. Casos de Teste</h2>
 
