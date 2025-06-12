@@ -63,16 +63,10 @@
 |:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
 | FT-01 | Seleção de Dieta Mediterrânea | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta. 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar” | Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino | O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais. |  | Passou! |
 
---- [3]. Registro de Bugs: Ocorreu o erro da opção selecionada não ficar em destaque
-
-| ID do Bug : BUG-01 
-| Caso de Teste Relacionado	: FT-02
-| Descrição do Problema	: Ocorreu o erro da opção selecionada não ficar em destaque, tornando confuso para o usuário
-| Severidade (Alta/Média/Baixa)	: Baixa
-| Status : Resolvida 
-| Responsável : Vanderson
-| Link para issue no GitHub : Sem Link Disponível
-
+<h2>[3]. Registro de Bugs: Ocorreu o erro da opção selecionada não ficar em destaque</h2>
+| ID do Bug | Caso de Teste Relacionado | Descrição do Problema | Severidade (Alta/Média/Baixa) | Status | Responsável | Link para issue no GitHub |
+|:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|
+| BUG-01 | FT-02 | Ocorreu o erro da opção selecionada não ficar em destaque, tornando confuso para o usuário | Baixa | Resolvida | Vanderson | Sem Link Disponível |
 
 --- [4]. Teste de Usabilidade
 
