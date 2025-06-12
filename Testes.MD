@@ -52,15 +52,15 @@
 <li>Então o sistema deve apresentar refeições com baixo teor de carboidratos e calorias adequadas para promover o ganho de massa muscular</li>
 </ul>
 <hr>
-<tr>
+<td>
 	<th>
-		<td>a</td>
-		<td>b</td>
+		<tr>a</tr>
+		<tr>b</tr>
 	</th>
-	<td>a</td>
-	<td>b</td>
+	<tr>a</tr>
+	<tr>b</tr>
 	
-</tr>
+</td>
 ````
 ID: FT-01
 Funcionalidade: Pré-Condição	Passos Dados de Entrada	Resultado Esperado	Resultado Obtido	Status (✅/❌)	Observações
