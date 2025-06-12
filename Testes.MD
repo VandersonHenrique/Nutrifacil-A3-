@@ -1,4 +1,4 @@
---- [1]. Cenário em Gherkin:
+<h2>--- [1]. Cenário em Gherkin:</h2>
 
 Funcionalidade: Seleção de Dieta
   Cenário: Usuário escolhe dieta Mediterrânea
