@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil NutriVida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/cadastro2.css">
+</head>
+<body>
+    <div id="theme-toggle" class="theme-toggle-switch">
+        <div class="switch-thumb">
+            <span class="icon">☀️</span>
+        </div>
+    </div>
+
+    <div class="profile-container"> <h2>
+            <img src="img/NutriFacilLogo.png" alt="Logo NutriFácil" style="max-width: 100%; height: auto;">
+        </h2>
+        <form action="processar_cadastro.php" method="POST" id="profileForm">
+            <input type="hidden" id="name" name="name">
+            <input type="hidden" id="email" name="email">
+            <input type="hidden" id="password" name="password">
+            <input type="hidden" id="sexuality" name="sexuality" required>
+
+            <div class="input-group">
+                <label>Qual o seu sexo?</label>
+                <div class="sexuality-selection">
+                    <div class="sexuality-card" data-sexuality="masculino">
+                        <span class="emoji-icon">🚹</span>
+                        <p>Masculino</p>
+                    </div>
+                    <div class="sexuality-card" data-sexuality="feminino">
+                        <span class="emoji-icon">🚺</span>
+                        <p>Feminino</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="dob">Data de Nascimento</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="allergies-section input-group">
+                <label>Alergias:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="allergies[]" value="lactose"> Lactose</label>
+                    <label><input type="checkbox" name="allergies[]" value="gluten"> Glúten</label>
+                    <label><input type="checkbox" name="allergies[]" value="leite"> Proteína do leite</label>
+                    <label><input type="checkbox" name="allergies[]" value="ovo"> Ovo</label>
+                    <label><input type="checkbox" name="allergies[]" value="frutos_do_mar"> Frutos do mar</label>
+                    <label><input type="checkbox" name="allergies[]" value="nenhuma" id="no-allergies"> Nenhuma</label>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="error-message"></div>
+            <button type="submit" id="submitButton">Finalizar Cadastro</button>
+        </form>
+    </div>
+
+    <script src="js/cadastro2.js"></script>
+</body>
+</html>
