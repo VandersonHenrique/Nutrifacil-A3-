@@ -1,51 +1,59 @@
-<h2>--- [1]. Cenário em Gherkin:</h2>
+<h2>[1]. Cenário em Gherkin:</h2>
+<ul>
+  <li>Funcionalidade: Seleção de Dieta</li>  
+  <li>Cenário: Usuário escolhe dieta Mediterrânea</li>
+  <li>Dado que o usuário seleciona a dieta "Mediterrânea"</li>
+  <li>E informa peso "70", altura "170", idade "30" e sexo "Feminino"</li>
+  <li>Quando solicita o plano alimentar</li>
+  <li>Então o sistema deve sugerir refeições com azeite, peixes e grãos integrais</li>
+</ul>
 
-Funcionalidade: Seleção de Dieta
-  Cenário: Usuário escolhe dieta Mediterrânea
-    Dado que o usuário seleciona a dieta "Mediterrânea"
-    E informa peso "70", altura "170", idade "30" e sexo "Feminino"
-    Quando solicita o plano alimentar
-    Então o sistema deve sugerir refeições com azeite, peixes e grãos integrais
+<ul>
+  <li>Funcionalidade: Seleção de Alergias</li>
+  <li>Cenário: Usuário preenche suas alergias</li>
+  <li>Dado que o usuário informa nome, e-mail e senha</li>
+  <li>E seleciona gênero "Feminino" e data de nascimento "1995-06-11"</li>
+  <li>E informa alergias "glúten" e "lactose"</li>
+  <li>E informa peso "60", altura "165", idade "29" e preferência alimentar "Vegetariana"</li>
+  <li>E seleciona a dieta "Low Carb"</li>
+  <li>E seleciona o objetivo "Saúde e Bem-estar"</li>
+  <li>Quando solicita o plano alimentar</li>
+  <li>Então o sistema deve sugerir refeições sem glúten e sem lactose</li>
+</ul>
 
-Funcionalidade: Seleção de Alergias
-  Cenário: Usuário preenche suas alergias
-    Dado que o usuário informa nome, e-mail e senha
-    E seleciona gênero "Feminino" e data de nascimento "1995-06-11"
-    E informa alergias "glúten" e "lactose"
-    E informa peso "60", altura "165", idade "29" e     preferência alimentar "Vegetariana"
-    E seleciona a dieta "Low Carb"
-    E seleciona o objetivo "Saúde e Bem-estar"
-    Quando solicita o plano alimentar
-    Então o sistema deve sugerir refeições sem glúten e     sem lactose
+<ul>
+  <li>Funcionalidade: Definição de Objetivo</li>
+  <li>Cenário: Usuário seleciona objetivo de ganho de massa muscular</li>
+  <li>Dado que o usuário informa peso "75", altura "180", idade "28" e sexo "Masculino"</li>
+  <li>E seleciona o objetivo "Hipertrofia"</li>
+  <li>E escolhe a dieta "Cetogênica"</li>
+  <li>Quando solicita o plano alimentar</li>
+  <li>Então o sistema deve sugerir refeições ricas em proteínas, como frango, ovos e leguminosas</li>
+</ul>
 
-Funcionalidade: Definição de Objetivo
-   Cenário: Usuário seleciona objetivo de ganho de     massa muscular
-   Dado que o usuário informa peso "75", altura "180",    idade "28" e sexo "Masculino"
-   E seleciona o objetivo "Hipertrofia"
-   E escolhe a dieta "Cetogênica"
-   Quando solicita o plano alimentar
-   Então o sistema deve sugerir refeições ricas em    proteínas, como frango, ovos e leguminosas
+<ul>
+  <li>Funcionalidade: Preferência Alimentar</li>
+  <li>Cenário: Usuário escolhe preferência alimentar vegana</li>
+  <li>Dado que o usuário informa peso "65", altura "172", idade "25" e sexo "Feminino"</li>
+  <li>E seleciona a preferência alimentar "Vegana"</li>
+  <li>E escolhe a dieta "Vegetariana"</li>
+  <li>E seleciona o objetivo "Emagrecimento"</li>
+  <li>Quando solicita o plano alimentar</li>
+  <li>Então o sistema deve sugerir refeições com vegetais frescos e sem ingredientes de origem animal, respeitando a dieta vegetariana</li>
+</ul>
 
-Funcionalidade: Preferência Alimentar
-Cenário: Usuário escolhe preferência alimentar vegana
- Dado que o usuário informa peso "65", altura "172", idade "25" e sexo "Feminino"
- E seleciona a preferência alimentar "Vegana"
- E escolhe a dieta "Vegetariana"
- E seleciona o objetivo "Emagrecimento"
- Quando solicita o plano alimentar
- Então o sistema deve sugerir refeições com vegetais frescos e sem ingredientes de origem animal, respeitando a dieta vegetariana
+<ul>
+  <li>Funcionalidade: Cálculo de Calorias</li>
+  <li>Cenário: Sistema calcula calorias para hipertrofia com dieta Low Carb</li>
+  <li>Dado que o usuário informa peso "80", altura "175", idade "35" e sexo "Masculino"</li>
+  <li>E seleciona o objetivo "Hipertrofia"</li>
+  <li>E escolhe a dieta "Low Carb"</li>
+  <li>Quando solicita o plano alimentar</li>
+<li>Então o sistema deve apresentar refeições com baixo teor de carboidratos e calorias adequadas para promover o ganho de massa muscular<li>
+</ul>
 
-Funcionalidade: Cálculo de Calorias
-Cenário: Sistema calcula calorias para hipertrofia com dieta Low Carb
- Dado que o usuário informa peso "80", altura "175", idade "35" e sexo "Masculino"
- E seleciona o objetivo "Hipertrofia"
- E escolhe a dieta "Low Carb"
- Quando solicita o plano alimentar
- Então o sistema deve apresentar refeições com baixo teor de carboidratos e calorias adequadas para promover o ganho de massa muscular
-
-
-ID	Funcionalidade	Pré-Condição	Passos	Dados de Entrada	Resultado Esperado	Resultado Obtido	Status (✅/❌)	Observações
-FT-01	Seleção de Dieta Mediterrânea	Usuário autenticado e página de “Seleção de Dieta” aberta	1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar”	- Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino	O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais.	(preencher após a execução do teste)		
+<p>ID	Funcionalidade	Pré-Condição	Passos	Dados de Entrada	Resultado Esperado	Resultado Obtido	Status (✅/❌)	Observações
+FT-01	Seleção de Dieta Mediterrânea	Usuário autenticado e página de “Seleção de Dieta” aberta	1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar”	- Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino	O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais.	(preencher após a execução do teste)</p>
 
 
 --- [2]. Casos de Teste
