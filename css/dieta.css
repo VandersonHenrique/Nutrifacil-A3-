@@ -1,0 +1,143 @@
+:root {
+    --background-image-light: url('../img/FundoClaro.png');
+    --background-image-dark: url('../img/FundoEscuro.jpg');
+
+    --background-color-light: #f0f2f5;
+    --text-color-light: #333;
+    --card-background-light: #fff;
+    --button-background-light: #4CAF50;
+    --button-hover-light: #45a049;
+    --border-color-light: #ddd;
+    --input-background-light: #f9f9f9;
+    --box-shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --logo-background-light: var(--button-background-light);
+    --logo-text-light: #ffffff;
+    --background-color-dark: #282c34;
+    --text-color-dark: #f0f2f5;
+    --card-background-dark: #3b3f47;
+    --button-background-dark: #1A531A;
+    --button-hover-dark: #0F3D0F;
+    --border-color-dark: #555;
+    --input-background-dark: #444;
+    --box-shadow-dark: 0 4px 15px rgba(0, 0, 0, 0.3);
+    --logo-background-dark: var(--button-background-dark);
+    --logo-text-dark: #f0f2f5;
+    --link-dark-theme-color: #8BC34A;
+    --error-text-color: #D32F2F;
+    --error-background-color: #FFEBEE;
+    --error-border-color: #FFCDD2;
+    --toggle-track-light: #b0c4de;
+    --toggle-thumb-light: #FFD700;
+    --toggle-track-dark: #4682B4;
+    --toggle-thumb-dark: #A9A9A9;
+    --water-color: #3498db;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-color-light);
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 40px;
+    transition: background 0.3s ease-in-out, color 0s;
+    background-color: var(--background-color-light);
+    background-image: var(--background-image-light);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body.dark-theme {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-dark);
+    background-image: var(--background-image-dark);
+}
+
+.theme-toggle-switch { position: absolute; top: 20px; right: 20px; width: 80px; height: 40px; background-color: var(--toggle-track-light); border-radius: 20px; cursor: pointer; transition: background-color 0s; display: flex; align-items: center; padding: 0 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+.dark-theme .theme-toggle-switch { background-color: var(--toggle-track-dark); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+.switch-thumb { width: 30px; height: 30px; background-color: var(--toggle-thumb-light); border-radius: 50%; transition: transform 0s; display: flex; justify-content: center; align-items: center; font-size: 20px; transform: translateX(0); }
+.dark-theme .switch-thumb { background-color: var(--toggle-thumb-dark); transform: translateX(40px); }
+.switch-thumb .icon { color: #333; line-height: 1; }
+.dark-theme .switch-thumb .icon { color: #f0f2f5; }
+.back-button { position: absolute; top: 20px; left: 20px; background-color: var(--button-background-light); color: white; border: none; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: bold; text-decoration: none; transition: background-color 0s, transform 0.2s, box-shadow 0.2s; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 5px; }
+.dark-theme .back-button { background-color: var(--button-background-dark); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+.back-button:hover { background-color: var(--button-hover-light); transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); }
+.dark-theme .back-button:hover { background-color: var(--button-hover-dark); }
+.health-profile-container { background-color: var(--card-background-light); padding: 40px; border-radius: 12px; box-shadow: var(--box-shadow-light); width: 100%; max-width: 500px; text-align: center; transition: background-color 0s, box-shadow 0s; box-sizing: border-box; }
+.dark-theme .health-profile-container { background-color: var(--card-background-dark); box-shadow: var(--box-shadow-dark); }
+h2 { margin-top: 0; margin-bottom: 30px; padding: 15px 20px; background-color: var(--logo-background-light); color: var(--logo-text-light); border-radius: 8px; font-size: 28px; font-weight: 700; display: inline-block; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: background-color 0s, color 0s, box-shadow 0s; }
+.dark-theme h2 { background-color: var(--logo-background-dark); color: var(--logo-text-dark); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+.input-group { margin-bottom: 25px; text-align: left; }
+.input-group label { display: block; margin-bottom: 10px; font-weight: bold; color: var(--text-color-light); font-size: 16px; }
+.dark-theme .input-group label { color: var(--text-color-dark); }
+.input-group input[type="number"], .input-group input[type="radio"] + label { width: calc(100% - 24px); padding: 12px; border: 1px solid var(--border-color-light); border-radius: 8px; font-size: 16px; background-color: var(--input-background-light); color: var(--text-color-light); transition: border-color 0s, background-color 0s, color 0s, box-shadow 0.2s; box-sizing: border-box; }
+.dark-theme .input-group input[type="number"], .dark-theme .input-group input[type="radio"] + label { border: 1px solid var(--border-color-dark); background-color: var(--input-background-dark); color: var(--text-color-dark); }
+.input-group input:focus { border-color: var(--button-background-light); outline: none; box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2); }
+.dark-theme .input-group input:focus { border-color: var(--button-background-dark); box-shadow: 0 0 0 3px rgba(26, 83, 26, 0.2); }
+.objective-selection, .diet-selection { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 25px; }
+.objective-card, .diet-card { flex: 1; min-width: 150px; background-color: var(--input-background-light); border: 2px solid var(--border-color-light); border-radius: 10px; padding: 15px; cursor: pointer; transition: background-color 0s, border-color 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); }
+.dark-theme .objective-card, .dark-theme .diet-card { background-color: var(--input-background-dark); border: 2px solid var(--border-color-dark); }
+.objective-card:hover, .diet-card:hover { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+.objective-card.selected, .diet-card.selected { border-color: var(--button-background-light); box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3); }
+.dark-theme .objective-card.selected, .dark-theme .diet-card.selected { border-color: var(--button-background-dark); box-shadow: 0 0 0 3px rgba(26, 83, 26, 0.3); }
+.objective-card p, .diet-card p { margin: 0; font-weight: bold; color: var(--text-color-light); }
+.dark-theme .objective-card p, .dark-theme .diet-card p { color: var(--text-color-dark); }
+.food-preferences-section .checkbox-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.food-preferences-section .checkbox-group label { display: flex; align-items: center; font-weight: normal; font-size: 15px; color: var(--text-color-light); }
+.dark-theme .food-preferences-section .checkbox-group label { color: var(--text-color-dark); }
+.food-preferences-section .checkbox-group input[type="checkbox"] { margin-right: 8px; accent-color: var(--button-background-light); width: 18px; height: 18px; }
+.dark-theme .food-preferences-section .checkbox-group input[type="checkbox"] { accent-color: var(--button-background-dark); }
+.error-message { color: var(--error-text-color); background-color: var(--error-background-color); border: 1px solid var(--error-border-color); border-radius: 8px; padding: 10px; margin-top: -15px; margin-bottom: 20px; font-size: 14px; font-weight: bold; display: none; }
+button[type="submit"], button[type="button"] { width: 100%; padding: 15px; background-color: var(--button-background-light); color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; transition: background-color 0s, transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 20px; }
+.dark-theme button[type="submit"], .dark-theme button[type="button"] { background-color: var(--button-background-dark); }
+button[type="submit"]:hover, button[type="button"]:hover { background-color: var(--button-hover-light); transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); }
+.dark-theme button[type="submit"]:hover, .dark-theme button[type="button"]:hover { background-color: var(--button-hover-dark); }
+.results-display p { font-size: 18px; margin-bottom: 15px; text-align: left; font-weight: bold; }
+.results-display span { font-weight: normal; margin-left: 5px; }
+.water-goal-display { margin-top: 25px; border-top: 1px solid var(--border-color-light); padding-top: 25px; display: flex; align-items: center; justify-content: center; gap: 15px; }
+.dark-theme .water-goal-display { border-top-color: var(--border-color-dark); }
+.water-goal-display .water-icon { width: 40px; height: 40px; fill: var(--water-color); }
+.water-goal-display .water-text { font-size: 1.5em; font-weight: bold; color: var(--water-color); }
+
+.diet-plan-container {
+    background-color: var(--card-background-light);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow-light);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin-top: 40px;
+}
+.dark-theme .diet-plan-container {
+    background-color: var(--card-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}
+.diet-plan-container h3 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--button-background-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.dark-theme .diet-plan-container h3 {
+    border-bottom-color: var(--button-background-dark);
+}
+.diet-plan-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.diet-plan-container li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-color-light);
+}
+.dark-theme .diet-plan-container li {
+    border-bottom-color: var(--border-color-dark);
+}
+
+@media (max-width: 1200px) { body { flex-direction: column; align-items: center; gap: 20px; } }
+@media (max-width: 600px) {  }
