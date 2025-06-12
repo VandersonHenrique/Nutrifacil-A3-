@@ -69,93 +69,73 @@
 |:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|
 | BUG-01 | FT-02 | Ocorreu o erro da opção selecionada não ficar em destaque, tornando confuso para o usuário | Baixa | Resolvida | Vanderson | Sem Link Disponível |
 
---- [4]. Teste de Usabilidade
+<h2>[4]. Teste de Usabilidade</h2>
 
-
-1. Metas Definidas
-O usuário deve conseguir selecionar uma dieta personalizada em ≤ 30 segundos.
-
-O usuário deve preencher seus dados pessoais em ≤ 1 minuto.
-
-O usuário deve conseguir gerar um plano alimentar completo em ≤ 2 minutos.
-
-O usuário deve encontrar onde registrar alergias/intolerâncias em ≤ 30 segundos.
-
-O usuário deve avaliar positivamente (nota ≥ 4) a facilidade de navegação e clareza das instruções.
-
-2. Participantes
-Nome / Código: Participante 01
-
-Perfil: Iniciante
-
-Data: 11/06/2025
-
-Moderador: Ícaro
-
-Dispositivo / Navegador: Smartphone Android / Google Chrome
-
-3. Objetivos do Teste
-Avaliar a facilidade de seleção de dieta
-
-Medir o tempo para preencher dados pessoais
-
-Verificar a clareza do plano alimentar gerado
-
-Avaliar localização do campo de alergias/intolerâncias
-
-Observar fluidez do processo de personalização alimentar
-
-4. Tarefas
-Nº	Descrição da Tarefa	Tempo Alvo	Tempo Real (s)	Sucesso	Erros / Dificuldades	Observações do Usuário
-1	Selecionar a dieta “Low Carb”	30 s	22 s	Sim	Nenhum	“Gostei que as dietas aparecem com ícone e descrição.”
-2	Informar peso, altura, idade e sexo	60 s	51 s	Sim	Confusão no botão de continuar	“Achei que tinha que salvar, não só ir pro próximo.”
-3	Escolher 3 alimentos preferidos por categoria	45 s	65 s	Sim	Demorou para entender que eram 3 por categoria	“Seria bom um aviso dizendo que faltam X escolhas.”
-4	Gerar o plano alimentar e visualizar recomendações	15 s	10 s	Sim	Nenhum	“Foi rápido e bem claro.”
-5	Identificar onde registrar alergias/intolerâncias	30 s	47 s	Não	Não encontrou facilmente	“Achei que era nas configurações, mas estava escondido.”
-6	Alterar um alimento do plano alimentar gerado	30 s	38 s	Sim	Um pouco confuso — botão pequeno	“Botão de editar podia ser maior e mais visível.”
-
-5. Métricas de Satisfação
-Critério	Nota (1–5)	Comentários
-Facilidade de navegação	4	"Fácil no geral, mas me perdi na parte das intolerâncias."
-Clareza das instruções	3	"As instruções podiam ser mais diretas."
-Velocidade de resposta	5	"App é rápido, tudo carrega bem."
-Layout e design	4	"Bonito, limpo, mas algumas coisas pequenas demais."
-Confiança na ferramenta	4	"Senti segurança no que foi gerado no plano."
-
-6. Feedback Aberto
-O que você mais gostou?
-"Achei bem fácil montar meu plano e visualizar as refeições."
-
-O que você achou mais difícil?
-"Tive dificuldade para encontrar onde colocar alergias."
-
-Sugestões de melhoria:
-"Adicionar um botão mais visível para editar plano e cadastrar restrições logo após o cadastro."
-
-7. Conclusões do Moderador
-Principais bloqueios encontrados:
-
-Dificuldade em localizar o campo de alergias
-
-Interface pouco intuitiva em partes específicas (ex.: editar alimento)
-
-Pontos fortes observados:
-
-Processo rápido e fluido na maior parte das tarefas
-
-Design visual agradável e respostas rápidas do sistema
-
-Recomendações para próxima iteração:
-
-Destacar com mais clareza o campo de alergias no fluxo principal
-
-Adicionar mensagens guiando o usuário nas escolhas obrigatórias
-
-Aumentar tamanho e contraste de botões de ação (ex.: editar)
-
-
-
-
-
-
-
+1. Metas Definidas<br>
+O usuário deve conseguir selecionar uma dieta personalizada em ≤ 30 segundos.<br>
+O usuário deve preencher seus dados pessoais em ≤ 1 minuto.<br>
+O usuário deve conseguir gerar um plano alimentar completo em ≤ 2 minutos.<br>
+O usuário deve encontrar onde registrar alergias/intolerâncias em ≤ 30 segundos.<br>
+O usuário deve avaliar positivamente (nota ≥ 4) a facilidade de navegação e clareza das instruções.<br>
+<br>
+2. Participantes<br>
+Nome / Código: Participante 01<br>
+Perfil: Iniciante<br>
+Data: 11/06/2025<br>
+Moderador: Ícaro<br>
+Dispositivo / Navegador: Smartphone Android / Google Chrome<br>
+<br>
+3. Objetivos do Teste<br>
+Avaliar a facilidade de seleção de dieta<br>
+Medir o tempo para preencher dados pessoais<br>
+Verificar a clareza do plano alimentar gerado<br>
+Avaliar localização do campo de alergias/intolerâncias<br>
+Observar fluidez do processo de personalização alimentar<br>
+<br>
+4. Tarefas<br>
+Nº	Descrição da Tarefa	Tempo Alvo	Tempo Real (s)	Sucesso	Erros / Dificuldades	Observações do Usuário<br>
+1	Selecionar a dieta “Low Carb”	30 s	22 s	Sim	Nenhum	“Gostei que as dietas aparecem com ícone e descrição.”<br>
+2	Informar peso, altura, idade e sexo	60 s	51 s	Sim	Confusão no botão de continuar	“Achei que tinha que salvar, não só ir pro próximo.”<br>
+3	Escolher 3 alimentos preferidos por categoria	45 s	65 s	Sim	Demorou para entender que eram 3 por categoria	“Seria bom um aviso dizendo que faltam X escolhas.”<br
+4	Gerar o plano alimentar e visualizar recomendações	15 s	10 s	Sim	Nenhum	“Foi rápido e bem claro.”<br>
+5	Identificar onde registrar alergias/intolerâncias	30 s	47 s	Não	Não encontrou facilmente	“Achei que era nas configurações, mas estava escondido.”<br>
+6	Alterar um alimento do plano alimentar gerado	30 s	38 s	Sim	Um pouco confuso — botão pequeno	“Botão de editar podia ser maior e mais visível.”<br>
+<br>
+5. Métricas de Satisfação<br>
+Critério	Nota (1–5)	Comentários<br>
+Facilidade de navegação	4	"Fácil no geral, mas me perdi na parte das intolerâncias."<br>
+Clareza das instruções	3	"As instruções podiam ser mais diretas."<br>
+Velocidade de resposta	5	"App é rápido, tudo carrega bem."<br>
+Layout e design	4	"Bonito, limpo, mas algumas coisas pequenas demais."<br>
+Confiança na ferramenta	4	"Senti segurança no que foi gerado no plano."<br>
+<br>
+6. Feedback Aberto<br>
+O que você mais gostou?<br>
+"Achei bem fácil montar meu plano e visualizar as refeições."<br>
+<br>
+O que você achou mais difícil?<br>
+"Tive dificuldade para encontrar onde colocar alergias."<br>
+<br>
+Sugestões de melhoria:<br>
+"Adicionar um botão mais visível para editar plano e cadastrar restrições logo após o cadastro."<br>
+<br>
+7. Conclusões do Moderador<br>
+Principais bloqueios encontrados:<br>
+<br>
+Dificuldade em localizar o campo de alergias<br>
+<br>
+Interface pouco intuitiva em partes específicas (ex.: editar alimento)<br>
+<br>
+Pontos fortes observados:<br>
+<br>
+Processo rápido e fluido na maior parte das tarefas<br>
+<br>
+Design visual agradável e respostas rápidas do sistema<br>
+<br>
+Recomendações para próxima iteração:<br>
+<br>
+Destacar com mais clareza o campo de alergias no fluxo principal<br>
+<br>
+Adicionar mensagens guiando o usuário nas escolhas obrigatórias<br>
+<br>
+Aumentar tamanho e contraste de botões de ação (ex.: editar)<br>
