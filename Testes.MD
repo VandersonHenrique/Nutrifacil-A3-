@@ -53,15 +53,27 @@
 </ul>
 <hr>
 
-| ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
-|:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
-| FT-01     | Seleção de Dieta Vegetariana | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Vegetariana” 3. Preencher o campo Peso com 100 kg 4. Preencher o campo Altura com 182 cm 5. Preencher o campo Idade com 40 anos 6. Selecionar Sexo como Masculino 7. Clicar no botão “Solicitar Plano Alimentar” | Dieta: Vegetariana - Peso: 100 - Altura: 182 - Idade: 40 - Sexo: Masculino | O sistema exibe um plano alimentar contendo refeições ricas em lentilhas com foco em vegetais não amilácios com variedade de folhas verdes, arroz integral e batata doce.|  Passou! |  ✅  |  O sistema respondeu como o esperado  |
-
 <h2>[2]. Casos de Teste</h2>
 
 | ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
 |:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
-| FT-01 | Seleção de Dieta Mediterrânea | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta. 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar” | Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino | O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais. |  Passou! |
+| FT-01     | Seleção de Dieta Vegetariana | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Vegetariana” 3. Preencher o campo Peso com 100 kg 4. Preencher o campo Altura com 182 cm 5. Preencher o campo Idade com 40 anos 6. Selecionar Sexo como Masculino 7. Clicar no botão “Gerar Dieta” | Dieta: Vegetariana - Peso: 100 - Altura: 182 - Idade: 40 - Sexo: Masculino | O sistema exibe um plano alimentar contendo refeições ricas em lentilhas com foco em vegetais não amilácios com variedade de folhas verdes, arroz integral e batata doce.|  Passou! |  ✅  |  O sistema respondeu como o esperado  |
+
+| ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
+|:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
+| FT-01     | Seleção de Dieta Mediterrânea | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 60 kg 4. Preencher o campo Altura com 155 cm 5. Preencher o campo Idade com 22 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Gerar Dieta” | Dieta: Mediterrânea - Peso: 60 - Altura: 155 - Idade: 40 - Sexo: Feminino | O sistema exibe um plano alimentar contendo refeições ricas em Peixes, Frango, Ovos, Tomate, Pimentão, Espinafre, Brocolis e Frutas.|  Passou! |  ✅  |  O sistema respondeu como o esperado  |
+
+| ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
+|:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
+| FT-01     | Seleção de Dieta Low Carb | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Low Carb” 3. Preencher o campo Peso com 80 kg 4. Preencher o campo Altura com 169 cm 5. Preencher o campo Idade com 23 anos 6. Selecionar Sexo como Masculino 7. Clicar no botão “Gerar Dieta” | Dieta: Low Carb - Peso: 80 - Altura: 169 - Idade: 23 - Sexo: Masculino | O sistema exibe um plano alimentar contendo refeições ricas Frango, Ovo, Couve-flor, Abobrinha, Pimentão, Alface e Rucula.|  Passou! |  ✅  |  O sistema respondeu como o esperado  |
+
+| ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
+|:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
+| FT-01     | Seleção de Dieta Cetogênica | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Cetogênica” 3. Preencher o campo Peso com 110 kg 4. Preencher o campo Altura com 175 cm 5. Preencher o campo Idade com 28 anos 6. Selecionar Sexo como Masculino 7. Clicar no botão “Gerar Dieta” | Dieta: Cetogênica - Peso: 110 - Altura: 175 - Idade: 28 - Sexo: Masculino | O sistema exibe um plano alimentar contendo refeições ricas Carnes gordas, Ovos, Folhas verdes, Pepino, Abacate, Óleo de coco e Castanhas.|  Passou! |  ✅  |  O sistema respondeu como o esperado  |
+
+| ID        | Funcionalidade                | Pré-Condição | Passos       | Dados de Entrada | Resultado Esperado | Resultado Obtido | Status (✅/❌) | Observações |
+|:----------|:-----------------------------:|-------------:|-------------:|-----------------:|-------------------:|-----------------:|----------------:|------------:|
+| FT-01     | Consultar sua taxa de betabolismo, IMC e quantidade de água diaria que deve consumir | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Low Carb” 3. Preencher o campo Peso com 87 kg 4. Preencher o campo Altura com 183 cm 5. Preencher o campo Idade com 23 anos 6. Selecionar Sexo como Masculino 7. Clicar no botão “Calcular resultados” | Taxa de Metabolismo = 1903.75kcal, IMC = 25.98(sobrepeso), e deve consumir 3 Litros diarios de água. |  Passou! |  ✅  |  O sistema respondeu como o esperado  |
 
 <h2>[3]. Registro de Bugs: Ocorreu o erro da opção selecionada não ficar em destaque</h2>
 
