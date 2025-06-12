@@ -10,7 +10,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405); o
+    http_response_code(405); 
     echo json_encode(['error' => 'Método de requisição inválido.']);
     exit;
 }
