@@ -94,7 +94,7 @@ Fernando Rufino Barcelos | https://github.com/fernandorufinobarcelos<br>
 Emilli Giuliane Pereira Lima | https://github.com/Emilli-Giuliane
 </p>
 
-<h2>6. Inclusão de uma licença</h2>
+<h2>8. Inclusão de uma licença</h2>
 MIT License<br>
 Copyright (c) 2025 UNA - Gestão e Qualidade de Software 2025.1<br>
 Permission is hereby granted, free of charge, to any person obtaining a copy
