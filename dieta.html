@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Saúde NutriVida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/dieta.css">
+</head>
+<body>
+    <a href="login.html" class="back-button">&#8592; Voltar</a>
+    <div id="theme-toggle" class="theme-toggle-switch">
+        <div class="switch-thumb"><span class="icon">☀️</span></div>
+    </div>
+
+    <div class="main-content-wrapper" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+            <div class="health-profile-container">
+                <h2>
+                    <img src="img/NutriFacilLogo.png" alt="Logo NutriFácil" style="max-width: 100%; height: auto;">
+                </h2>
+                <form action="#" method="POST" id="healthProfileForm1">
+                    <div class="input-group">
+                        <label for="height1">Altura (cm)</label>
+                        <input type="number" id="height1" name="height1" placeholder="Ex: 175" min="100" max="250" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="weight1">Peso (kg)</label>
+                        <input type="number" id="weight1" name="weight1" placeholder="Ex: 70" min="30" max="300" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Qual o seu objetivo?</label>
+                        <div class="objective-selection" id="objective-selection-1">
+                            <div class="objective-card" data-objective="emagrecimento"><p>Emagrecimento</p></div>
+                            <div class="objective-card" data-objective="hipertrofia"><p>Hipertrofia</p></div>
+                        </div>
+                    </div>
+                    <div class="food-preferences-section input-group">
+                        <label>Preferência de Alimento:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="food_preferences1" value="Proteínas"> Proteínas</label>
+                            <label><input type="checkbox" name="food_preferences1" value="Legumes"> Legumes</label>
+                            <label><input type="checkbox" name="food_preferences1" value="Verduras"> Verduras</label>
+                            <label><input type="checkbox" name="food_preferences1" value="Carboidratos"> Carboidratos</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Qual tipo de dieta você deseja fazer?</label>
+                        <div class="diet-selection" id="diet-selection-1">
+                            <div class="diet-card" data-diet="mediterranea"><p>Mediterrânea</p></div>
+                            <div class="diet-card" data-diet="low_carb"><p>Low Carb</p></div>
+                            <div class="diet-card" data-diet="cetogenica"><p>Cetogênica</p></div>
+                            <div class="diet-card" data-diet="vegetariana"><p>Vegetariana</p></div>
+                        </div>
+                    </div>
+                    <div id="errorMessage1" class="error-message"></div>
+                    <button type="button" id="generateDietButton">Gerar Dieta</button>
+                </form>
+            </div>
+            
+            <div class="health-profile-container">
+                <h2>Resultados</h2>
+                <div class="results-display">
+                    <p><strong>Taxa de Metabolismo Basal (TMB):</strong> <span id="tmbResult">--</span> kcal</p>
+                    <p><strong>Índice de Massa Corporal (IMC):</strong> <span id="imcResult">--</span> (<span id="imcClassification">--</span>)</p>
+                </div>
+                
+                <div class="water-goal-display" style="display: none;">
+                    <svg class="water-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0h1.8c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192z"/>
+                    </svg>
+                    <span class="water-text" id="waterGoalText">-- Litros</span>
+                </div>
+
+                <div id="errorMessageResults" class="error-message"></div>
+                <button type="button" id="calculateResultsButton">Calcular Resultados</button>
+            </div>
+        </div>
+        
+        <div id="dietPlanContainer" class="diet-plan-container" style="display: none;">
+             <h2>Seu Plano Alimentar Sugerido</h2>
+             <div id="dietPlanContent"></div>
+        </div>
+    </div>
+
+    <script src="js/dieta.js"></script>
+</body>
+</html>
