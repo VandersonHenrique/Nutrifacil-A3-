@@ -49,7 +49,7 @@
   <li>E seleciona o objetivo "Hipertrofia"</li>
   <li>E escolhe a dieta "Low Carb"</li>
   <li>Quando solicita o plano alimentar</li>
-<li>Então o sistema deve apresentar refeições com baixo teor de carboidratos e calorias adequadas para promover o ganho de massa muscular<li>
+<li>Então o sistema deve apresentar refeições com baixo teor de carboidratos e calorias adequadas para promover o ganho de massa muscular</li>
 </ul>
 <hr>
 ```
