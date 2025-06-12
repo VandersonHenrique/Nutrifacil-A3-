@@ -3,53 +3,62 @@
    
 <h2>2. Descrição</h2>
 
-Este projeto acadêmico tem como objetivo principal oferecer uma ferramenta rápida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário.
+<p>Este projeto acadêmico tem como objetivo principal oferecer uma ferramenta rápida e simples para a análise da saúde e bem-estar individual. A partir de dados fornecidos pelo usuário, o sistema realizará o cálculo da Taxa de Metabolismo Basal (TMB), do Índice de Massa Corporal (IMC) e do Consumo Diário de Água recomendado. Além disso, e de forma personalizada, o projeto irá sugerir um plano alimentar adaptado às preferências e necessidades do usuário.</p>
 
-  <h2>3. Funcionalidades Principais</h2>
+<h2>3. Funcionalidades Principais</h2>
+<ul>
+   <li>Cadastro e Login de Usuários: Sistema seguro para criação e autenticação de contas.</li>
+   <li>Cálculos de Saúde:
+      <ul>
+         <li>Taxa de Metabolismo Basal (TMB)</li>
+         <li>Índice de Massa Corporal (IMC)</li>
+         <li>Consumo de Água Diário Ideal</li>     
+      </ul></li>
+   <li>Plano Alimentar Personalizado: Sugestão de dieta baseada nos objetivos e preferências do usuário.</li>
+</ul>
 
-      a. Cadastro e Login de Usuários: Sistema seguro para criação e autenticação de contas.
-      b. Cálculos de Saúde:
-      c. Taxa de Metabolismo Basal (TMB)
-      d. Índice de Massa Corporal (IMC)
-      e. Consumo de Água Diário Ideal
-      f. Plano Alimentar Personalizado: Sugestão de dieta baseada nos objetivos e preferências do usuário.
-      
-  <h2>4. Pré-requisitos</h2>
-
-   <p>a. Antes de começar, garanta que você tenha os seguintes softwares instalados em sua máquina:</p>
-   <p>b. XAMPP: Um ambiente de servidor local que inclui Apache, MySQL e PHP.</p>
-   <p>c. Git: Para clonar o repositório.</p>
-   <p>d. Um navegador web: (ex: Google Chrome, Firefox).</p>
-   <p>e. MySQL Workbench (Opcional, mas recomendado): Para gerenciar o banco de dados com mais facilidade.</p>
+<h2>4. Pré-requisitos</h2>
+<p>Antes de começar, garanta que você tenha os seguintes softwares instalados em sua máquina:</p>
+   <ul>
+      <li>XAMPP: Um ambiente de servidor local que inclui Apache, MySQL e PHP.</li>
+      <li>Git: Para clonar o repositório.</li>
+      <li>Um navegador web: (ex: Google Chrome, Firefox).</li>
+      <li>MySQL Workbench (Opcional, mas recomendado): Para gerenciar o banco de dados com mais facilidade.</li>
+   </ul>
 
 <h2>5. instalação e Execução do Projeto</h2>
-Siga este passo a passo para rodar o projeto em sua máquina local.
-
-   <p>a. Clonar o Repositório</p>
-      <p>Abra o seu terminal ou Git Bash e clone este repositório para o seu computador.</p>
-   <p>b. Mover a Pasta do Projeto</p>
-      <p>Mova a pasta clonada  para dentro da pasta htdocs do seu XAMPP. O caminho padrão é:</p>
-   <p>C:\xampp\htdocs\</p>
-     <p> O caminho final do projeto deverá ser: C:\xampp\htdocs\NutriFacil\</p>
-  <p> c. Iniciar o Servidor XAMPP</p>
-      <p>Abra o Painel de Controle do XAMPP e inicie os módulos Apache e MySQL.</p>
-      <p>Se o MySQL falhar, edite o arquivo my.ini para usar uma porta alternativa 3307.</p>
-   <p>d. Importar o Banco de Dados</p>
-      <p>O jeito mais fácil de configurar o banco de dados é importando o arquivo .sql que está neste repositório.</p>
-      <p>Abra o MySQL Workbench e conecte-se ao seu servidor local .</p>
-      <p>No menu superior, vá em File > Open SQL Script... e selecione o arquivo banco_de_dados.sql que está na pasta do projeto.</p>
-   <p>e. Configurar a Conexão</p>
-      <p>Para que o código PHP se conecte ao banco de dados, você precisa configurar suas credenciais.</p>
-      <p>Na pasta do projeto, encontre o arquivo config.example.php.</p>
-      <p>Faça uma cópia deste arquivo e renomeie a cópia para config.php.</p>
-      <p>Abra o config.php e edite as seguintes linhas com as suas informações:</p>
-      <p>define('DB_PASSWORD', 'sua_senha_do_mysql_root'); </p>
-      <p>Importante: Se você precisou alterar a porta do MySQL no Passo 3 (ex: para 3307), você precisará ajustar a linha de conexão nos arquivos processar_cadastro.php e Serv_Login.php para incluir a porta:</p>
-      <p>Exemplo de alteração: "$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, 3307);"</p>
-   <p>f. Acessar o Projeto</p>
-      <p>Abra seu navegador e acesse o site.</p>
-      <p>Ex: http://localhost/NutriFacil/login.html</p>
-
+<p>Siga este passo a passo para rodar o projeto em sua máquina local:</p>
+<ul>
+   <li>Passo 1, clonar o Repositório: Abra o seu terminal ou Git Bash e clone este repositório para o seu computador.</li>
+   <li>Passo 2, mover a Pasta do Projeto:<ul>
+   <li>Mova a pasta clonada  para dentro da pasta htdocs do seu XAMPP. O caminho padrão é: C:\xampp\htdocs\</li>
+   <li>O caminho final do projeto deverá ser: C:\xampp\htdocs\NutriFacil\</li></ul></li>
+   <li>Passo 3, iniciar o Servidor XAMPP:<ul> 
+      <li>Abra o Painel de Controle do XAMPP e inicie os módulos Apache e MySQL.</li>
+      <li>Se o MySQL falhar, edite o arquivo my.ini para usar uma porta alternativa 3307.</li></ul>
+   </li>
+   <li>Passo 4, importar o Banco de Dados: <ul>
+      <li>O jeito mais fácil de configurar o banco de dados é importando o arquivo .sql que está neste repositório.</li>
+      <li>Abra o MySQL Workbench e conecte-se ao seu servidor local.</li>
+      <li>No menu superior, vá em File > Open SQL Script... e selecione o arquivo banco_de_dados.sql que está na pasta do projeto.</li>
+   </li></ul>
+   <li>Passo 5, Configurar a Conexão:</li><ul>
+      <li>Para que o código PHP se conecte ao banco de dados, você precisa configurar suas credenciais.</li>
+      <li>Na pasta do projeto, encontre o arquivo config.example.php.</li>
+      <li>Faça uma cópia deste arquivo e renomeie a cópia para config.php.</li>
+      <li>Abra o config.php e edite as seguintes linhas com as suas informações:<ul>
+         <li>define('DB_PASSWORD', 'sua_senha_do_mysql_root');</li>
+      </ul></li>
+      <li>Importante: Se você precisou alterar a porta do MySQL no Passo 3 (ex: para 3307), você precisará ajustar a linha de conexão nos arquivos processar_cadastro.php e Serv_Login.php para incluir a porta:<ul>
+         <li>Exemplo de alteração: "$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, 3307);"</li>
+      </ul></li>
+   </ul>   
+   <li>Passo 6, acessar o Projeto:<ul>
+      <li>Abra seu navegador e acesse o site.<ul>
+         <li>Ex: http://localhost/NutriFacil/login.html</li>
+      </ul></li>
+   </ul></li>
+</ul>
 
    
 <h2>6. Uso do projeto</h2>
