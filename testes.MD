@@ -1,4 +1,4 @@
-Cenário em Gherkin:
+1 - Cenário em Gherkin:
 
 Funcionalidade: Seleção de Dieta
   Cenário: Usuário escolhe dieta Mediterrânea
@@ -47,8 +47,22 @@ Cenário: Sistema calcula calorias para hipertrofia com dieta Low Carb
 ID	Funcionalidade	Pré-Condição	Passos	Dados de Entrada	Resultado Esperado	Resultado Obtido	Status (✅/❌)	Observações
 FT-01	Seleção de Dieta Mediterrânea	Usuário autenticado e página de “Seleção de Dieta” aberta	1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar”	- Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino	O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais.	(preencher após a execução do teste)		
 
-| ID    | Funcionalidade | Pré-Condição | Passos | Dados de Entrada | Resultado Esperado | Resultado Obtido |
-| FT-01	 | Seleção de Dieta Mediterrânea | Usuário autenticado e página de “Seleção de Dieta” aberta | 1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar” | - Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino | O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais. | Resultado: Sucesso! | 
+
+2 - Casos de Teste
+
+ID: FT-01	 
+Funcionalidade: Seleção de Dieta Mediterrânea
+Pré-Condição: Usuário autenticado e página de “Seleção de Dieta” aberta 
+Passos: 1. Acessar a tela de seleção de dieta. 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar”
+Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino 
+Resultado Esperado: O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais. 
+Resultado: Passou!
+
+3 - Registro de Bugs: Ocorreu o erro da opção selecionada não ficar em destaque
+
+| ID do Bug | Caso de Teste Relacionado	| Descrição do Problema	| Severidade (Alta/Média/Baixa)	| Status | Responsável | Link para issue no GitHub |
+| ---      | ---       | ---      | ---      | ---      | ---      | ---      | ---      |
+| BUG-01 | FT-02 | Ocorreu o erro da opção selecionada não ficar em destaque, tornando confuso para o usuário | Baixa	| Resolvida | Vanderson | Sem Link Disponível |
 
 
 
