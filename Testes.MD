@@ -7,7 +7,7 @@
   <li>Quando solicita o plano alimentar</li>
   <li>Então o sistema deve sugerir refeições com azeite, peixes e grãos integrais</li>
 </ul>
-
+<hr>
 <ul>
   <li>Funcionalidade: Seleção de Alergias</li>
   <li>Cenário: Usuário preenche suas alergias</li>
@@ -20,7 +20,7 @@
   <li>Quando solicita o plano alimentar</li>
   <li>Então o sistema deve sugerir refeições sem glúten e sem lactose</li>
 </ul>
-
+<hr>
 <ul>
   <li>Funcionalidade: Definição de Objetivo</li>
   <li>Cenário: Usuário seleciona objetivo de ganho de massa muscular</li>
@@ -30,7 +30,7 @@
   <li>Quando solicita o plano alimentar</li>
   <li>Então o sistema deve sugerir refeições ricas em proteínas, como frango, ovos e leguminosas</li>
 </ul>
-
+<hr>
 <ul>
   <li>Funcionalidade: Preferência Alimentar</li>
   <li>Cenário: Usuário escolhe preferência alimentar vegana</li>
@@ -41,7 +41,7 @@
   <li>Quando solicita o plano alimentar</li>
   <li>Então o sistema deve sugerir refeições com vegetais frescos e sem ingredientes de origem animal, respeitando a dieta vegetariana</li>
 </ul>
-
+<hr>
 <ul>
   <li>Funcionalidade: Cálculo de Calorias</li>
   <li>Cenário: Sistema calcula calorias para hipertrofia com dieta Low Carb</li>
@@ -51,9 +51,11 @@
   <li>Quando solicita o plano alimentar</li>
 <li>Então o sistema deve apresentar refeições com baixo teor de carboidratos e calorias adequadas para promover o ganho de massa muscular<li>
 </ul>
-
-<p>ID	Funcionalidade	Pré-Condição	Passos	Dados de Entrada	Resultado Esperado	Resultado Obtido	Status (✅/❌)	Observações
-FT-01	Seleção de Dieta Mediterrânea	Usuário autenticado e página de “Seleção de Dieta” aberta	1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar”	- Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino	O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais.	(preencher após a execução do teste)</p>
+<hr>
+```
+ID: FT-01Funcionalidade Pré-Condição	Passos Dados de Entrada	Resultado Esperado	Resultado Obtido	Status (✅/❌)	Observações
+	Seleção de Dieta Mediterrânea	Usuário autenticado e página de “Seleção de Dieta” aberta	1. Acessar a tela de seleção de dieta 2. Selecionar a opção “Mediterrânea” 3. Preencher o campo Peso com 70 kg 4. Preencher o campo Altura com 170 cm 5. Preencher o campo Idade com 30 anos 6. Selecionar Sexo como Feminino 7. Clicar no botão “Solicitar Plano Alimentar”	- Dieta: Mediterrânea - Peso: 70 - Altura: 170 - Idade: 30 - Sexo: Feminino	O sistema exibe um plano alimentar contendo refeições ricas em azeite de oliva, peixes e grãos integrais.	(preencher após a execução do teste)
+```
 
 
 --- [2]. Casos de Teste
