@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         
         try {
-            const response = await fetch('../dieta_config.php'); 
+            const response = await fetch('dieta_config.php'); 
             if (!response.ok) {
                 if (response.status === 403) {
                     alert('Sua sessão expirou. Por favor, faça login novamente.');
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dietPlanContainer.style.display = 'block';
         
         try {
-            const response = await fetch('../Gerar_dieta.php', {
+            const response = await fetch('Gerar_dieta.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
